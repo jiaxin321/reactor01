@@ -23,7 +23,7 @@ public class StreamTest {
         employees.add(new Employees(2,1,"lisan"));
         employees.add(new Employees(3,14,"zhangqia"));
         employees.add(new Employees(4,14,"zhangqi"));
-        employees.add(new Employees(4,14,"zhangqi"));
-            employees.stream().map((e) ->e.getAge()).filter(e ->e>10).forEach(System.out::println);
+        employees.add(new Employees(4,14,"zhangqi11"));
+            employees.stream().map((e) ->e.getName()).filter(e ->e=="zhangqi").forEach(System.out::println);
     }
 }
